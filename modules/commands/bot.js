@@ -1,28 +1,76 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "goibot",
-  version: "1.0.1",
+  name: "bot",
+  version: "1.0.4",
   hasPermssion: 0,
-  credits: "Fixed By Arun Kumar",
+  credits: "Mod by John Lester",
   description: "goibot",
   commandCategory: "Noprefix",
   usages: "noprefix",
-  cooldowns: 5,
+  cooldowns: 6,
 };
 module.exports.handleEvent = async function({ api, event, args, Threads, Users }) {
   var { threadID, messageID, reason } = event;
   const moment = require("moment-timezone");
-  const time = moment.tz("Asia/Kolkata").format("DD/MM/YYYY || HH:mm:ss");
+  const time = moment.tz("Asia/Manila").format("HH:MM:ss L");
   var idgr = `${event.threadID}`;
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["Kya Tu ELvish Bhai Ke Aage Bolega🙄" , "Cameraman Jaldi Focus Kro 📸" , "Lagdi Lahore di aa🙈" , "Chay pe Chaloge" , "Mere liye Chay Bana Kar LA ,Pura din Dekho Bot BoT🙄" , "Din vicho tere Layi Teym Kadd ke, Kardi me Promise     Milan aungi" ,  "Yee bat Delhi tak jayegi" , "Je koi shaq ni , Kari check ni" , "ME HERAAN HU KI TUM BINA DIMAG KESE REH LETE HO☹️" , "sheHar me Hai rukka baeje Rao Saab ka🙄" , "Bewafa Nikali re tu🙂🤨", "Systemmmmmmm😴" , "Leja Leja tenu 7 samundra paar🙈🙈", "Laado puche manne kyu tera rang kala" , "Moye moye moye moye🙆🏻‍♀🙆🏻‍♀" , "Ye dukh kahe nahi khatm hota 🙁" , "Tum to dokebaz ho" , "you just looking like a wow😶" , "Mera aasmaan dhunde teri zamin" , "Kal ana abhi lunch time hai" , "Jab dekho B0T B0T b0T😒😒", "Chhodo na koi dekh lega🤭", "Kab ayega mere banjaare" , "Tum wahi ho na ,jisko.me.nahi janti 🙂" , "Ye I love you kya hota hai" , "Sunai deta hai mujhe behri nahi hu me   😒" , "so elegent, so beautiful , just looking like a wow🤭" , "began🙂" , "Aayein🤔" , "I Love you baby , mera recharge khtm hone wala h" , "paani paani uncle ji" , "apne Labhar ko dhoka do , daling hme bhi moka do🙈" , "Arry Bas Kar🤣😛" , "Me ni To Kon Be" , "naam adiya kumar 7vi kaksha me padhte hai favret subject begon😘" , "Mera Dimag Mat Khaya kro😒😒" , "Chuppp Saatvi Fail😒" , "Saste Nashe Kab Band kroge" , "Mai Jaanu Ke sath Busy hu yar, mujhe mat balao" , "Haye Jaanu Mujhe Yaad Kiya🙈" , "Hayee ese mt bulaya kro, mujhe sharm aati h" , "System pe system betha rahi chhori bot ki" , "Naach meri Bulbul tujhe pesa milega" , "me idhar se hu aap kidhar se ho" , "will you be my valentine🙈🙈" , "Kya plan hai valentine week ka" , "Mujhe bhi koi gulab chocolate dedo hum koi gair hai kya😥"];
+  var tl = ["you look like innocent😊", "don't call me Bot oi call me hubby😁","Do not disturb again and again I am busy with my girlfriend🙄","I don't talk to the poor😑","don't come so close love will happen😛😍","say baby do you love me😜","hey my love i am in no mood to joke😏","Say what is the work, don't be shy😚","you  don't have any work eat whole day eat and spend  whole  day on messanger🤔","shutup alway bot bot you don't have any work🧐","Tell me no one is watching🥱","oh my baby give me one kiss since many days don't kiss me💋💋","go away I don't have any other work do you keep bothering me all the time😤","Hey my wife how are you🤪😝","come inbox can't talk here🤭","Don't call me I am busy🙄","hey you are the one i don't know😂","i am your heartbeat💓💓","You are insulting by saying robot robot😬","dont call me bot call me hubby🤗","i can't see anythingI😎","do not want to talk to you🤐","will you marry me?❣👰🤵","i'm here what happened sweetheart🥴","keep quiet or else i will come out and break your teeth🦷👈","Seeing the boss, you have no other work🖐👊","you keeps on talking all the time🤕","take a shower first","i am blind😎","yes tell me🤫","Hey baby come here give a kiss💋 here and give two kisses💋💋 here","hey man i'm in no mood to joke😔","don't bother me i will kiss😌🖐","don't come so close love will happen🥺","will you marry me?🥰","Go away, you have no business🤷","when you see,you keeps on talking😒","marry me","Hey baby come here give a kiss here and give two kisses here","hey man i'm in no mood to joke🙂"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
+
+  if ((event.body.toLowerCase() == "good night") || (event.body.toLowerCase() == "gn")) {
+     return api.sendMessage("️❤️ Good Night too darling 🥰", threadID, messageID);
+   };
+
+   if ((event.body.toLowerCase() == "good morning") || (event.body.toLowerCase() == "gm")) {
+     return api.sendMessage("❤️ Good Morning too baby 🥰", threadID);
+   };
+
+  
+   if ((event.body.toLowerCase() == "emma") || (event.body.toLowerCase() == "emma)) {
+     return api.sendMessage("", threadID);
+   };
+
+if ((event.body.toLowerCase() == "💋") || (event.body.toLowerCase() == "😚😙😗")) {
+     return api.sendMessage("Don't kiss here kiss in private", threadID);
+   };
+  
+   if ((event.body.toLowerCase() == "hi") || (event.body.toLowerCase() == "hello")) {
+     return api.sendMessage("❤️Hello dear have a nice day", threadID);
+   };
+
+if ((event.body.toLowerCase() == "emma") || (event.body.toLowerCase() == "emma")) {
+     return api.sendMessage("where  is she? Maybe busy in anywhere 💖🤍✨","Don't mention her name😡", threadID);
+   };
+
+if ((event.body.toLowerCase() == "🥺") || (event.body.toLowerCase() == "😔")) {
+     return api.sendMessage("OH please don't be sad everything will ok🥺", threadID);
+   };
+  
+   if ((event.body.toLowerCase() == "🙄") || (event.body.toLowerCase() == "🙄🙄")) {
+     return api.sendMessage("uwhy are you looking  upside 🙄😈", threadID);
+   };
+
+
+  
+   if ((event.body.toLowerCase() == "😒") || (event.body.toLowerCase() == "😒😒")) {
+     return api.sendMessage("What happened🙄", threadID);
+   };
+
+  if ((event.body.toLowerCase() == "🤣") || (event.body.toLowerCase() == "😆")) {
+     return api.sendMessage("Why are you so happy", threadID);
+   };
+  
+   if ((event.body.toLowerCase() == "bye") || (event.body.toLowerCase() == "by")) {
+     return api.sendMessage("BYe Guys ❤️ ", threadID);
+   };
    mess = "{name}"
-  if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
+  
+  if (event.body.indexOf("bot") == 0 || (event.body.indexOf("Bot") == 0)) {
     var msg = {
-      body: `🚧${name}🚧,  \n\n『\n   ${rand} 』\n\n❤️𝙲𝚛𝚎𝚍𝚒𝚝𝚜 : 𝗔𝗿𝘂𝗻 𝗞𝘂𝗺𝗮𝗿🌹 `
+      body: `💋${name}💋, ${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
