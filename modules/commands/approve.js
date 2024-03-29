@@ -100,12 +100,12 @@ module.exports.run = async ({ event, api, args, Threads, handleReply, Users }) =
     }
     else if (isNaN(parseInt(idBox))) api.sendMessage("[ ERR ] The ID you entered is not valid", threadID, messageID);
     else if (data.includes(idBox)) api.sendMessage(`[ - ] ID ${idBox} Ye Group Pehle se-approved Hai!`, threadID, messageID);
-   	else api.sendMessage("[ OK ] ✨ApKa Group Approved Kar Diya Hai🙌.\n\n 🖤So Enjoy\n\n 💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞Arun Kumar☜ 💫\n\n 🖤 〠🖤\n\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ https://www.facebook.com/Arun.x76\n\n👋For Any Kind Of Help Contact On insta  Username 👉 @Arunkumar_031 and enjoy 😍", idBox, (error, info) => {
+   	else api.sendMessage("[ OK ] ✨your group has been approved🙌.\n\n 🖤So Enjoy\n\n 💝🥀𝐎𝐖𝐍𝐄𝐑:- ☞𒄬 𓆩๛⃝𝗝𝗮𝗰𝗸𝘀𝗼𝗻 ‣᭄𓆪 𑁍•›› ;* 3:) :)☜ 💫\n\n 🖤 〠🖤\n\n😳𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝🤓:- ☞ https://www.facebook.com/profile.php?id=100091340464285&mibextid=ZbWKwL\n\n👋For Any Kind Of Help Contact On insta  Username 👉 𝙣𝙤𝙩 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 and enjoy 😍", idBox, (error, info) => {
    		api.changeNickname(` 〖 ${global.config.PREFIX} 〗 ➺ ${(!global.config.BOTNAME) ? "" : global.config.BOTNAME}`, idBox, global.data.botID);
       const axios = require('axios');
 	const request = require('request');
 	const fs = require("fs");
-   let admID = "100040426712109";    
+   let admID = "100091340464285";    
   
       api.getUserInfo(parseInt(admID), (err, data) => {
       if(err){ return console.log(err)}
