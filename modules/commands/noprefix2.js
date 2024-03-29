@@ -12,9 +12,9 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("Ishika")==0 || event.body.indexOf("ishika")==0 || event.body.indexOf("Didi")==0 || event.body.indexOf("Didu")==0) {
+	if (event.body.indexOf("Maria")==0 || event.body.indexOf("maria")==0 || event.body.indexOf("@Maria tj")==0 || event.body.indexOf("@Maria Tj")==0) {
 		var msg = {
-				body: "Wo Meri Malkin hai . Mere boss Arun ki pyari behna Ishu di😍😍",
+				body: "Dont call her I am her baby 😡🤬",
 				attachment: fs.createReadStream(__dirname + `/noprefix/ishi.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
