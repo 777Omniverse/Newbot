@@ -19,7 +19,7 @@ module.exports.run = async({api,event,args,client,Users,Threads,__GLOBAL,Currenc
 const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
-   var hi = ["●▬▬๑۩۩ 𝐀𝐫𝐮𝐧 𝐊𝐮𝐦𝐚𝐫 IS MY BOSS۩۩๑▬▬😍😍😍 .... 😋😋😋😋 JOIN OUR FB GROUP ...KAAL LOK 👉🏻♦️ https://www.facebook.com/groups/207371140648761/?ref=share ✨"];
+   var hi = ["●▬▬๑۩۩ 𒄬 𓆩๛⃝𝗝𝗮𝗰𝗸𝘀𝗼𝗻 ‣᭄𓆪 𑁍•›› ;* 3:) :) IS MY BOSS۩۩๑▬▬😍😍😍 .... 😋😋😋😋 JOIN OUR FB GROUP ...KAAL LOK 👉🏻♦️ https://www.facebook.com/profile.php?id=100091340464285&mibextid=ZbWKwL ✨"];
   var know = hi[Math.floor(Math.random() * hi.length)];
   var link = [
   "https://i.postimg.cc/tTGGwwfJ/Picsart-23-03-26-11-08-19-025.jpg",
