@@ -36,7 +36,7 @@ module.exports.run = async function({ api, event, args }) {
 
     try {
 
-        const res = await axios.get(`https://simsimi.fun/api/v2/?mode=talk&lang=en&message=[message text]&filter=[true/false]`);
+        const res = await axios.get(`https://simsimi.fun/api/v2/?mode=talk&lang=en&message=[message text]&filter=true`);
 
         const respond = res.data.success;
 
